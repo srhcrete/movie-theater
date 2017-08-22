@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title></title>
+  </head>
+  <body>
+    <div class='container'>
+      <h1>Movie Theater</h1>
+
+      <div class='row'>
+        <div class='col-md-6'>
+          <h2>Check your movie price:</h2>
+          <form id='checkMoviePrice'>
+            <div class='form-group'>
+              <label for='selectMovie'>Select Movie:</label>
+              <select class="form-control" id="selectMovie">
+                <option>Dunkirk</option>
+                <option>Dark Tower</option>
+                <option>Spider-Man: Homecoming</option>
+                <option>Emoji Movie</option>
+                <option>Baby Driver</option>
+                <option>Hitman's Bodyguard</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="selectAge">Age:</label>
+              <select class="form-control" id="selectAge">
+                <option>Child</option>
+                <option>Adult</option>
+                <option>Senior</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="selectTime">Movie Time:</label>
+              <select class="form-control" id="selectTime">
+                <option>12:00pm</option>
+                <option>03:10pm</option>
+                <option>06:30pm</option>
+                <option>09:15pm</option>
+              </select>
+            </div>
+            <button type="submit" class="btn">Check Movie Price</button>
+          </form>
+          <h2>Movie Price</h2>
+          <ul id="moviePrice">
+
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
