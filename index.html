@@ -1,10 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <script src="js/jquery-3.2.1.js"></script>
-    <script src="js/scripts.js"></script>
+    <link href='css/bootstrap.css' rel='stylesheet' type='text/css'>
+    <link href='css/styles.css' rel='stylesheet' type='text/css'>
     <title></title>
   </head>
   <body>
@@ -22,18 +20,18 @@
           <form id='checkMoviePrice'>
             <div class='form-group'>
               <label for='selectMovie'>Select Movie:</label>
-              <select class='form-control' id='selectMovie'>
+              <select class='form-control' id='selectMovie' name='movieName'>
                 <option value='dunkirk'>Dunkirk</option>
                 <option value='darkTower'>Dark Tower</option>
                 <option value='spiderMan'>Spider-Man: Homecoming</option>
                 <option value='emoji'>Emoji Movie</option>
                 <option value='babyDriver'>Baby Driver</option>
-                <option>Hitman's Bodyguard</option>
+                <option value='hitmansBodyguard'>Hitman's Bodyguard</option>
               </select>
             </div>
             <div class='form-group'>
               <label for='selectAge'>Age:</label>
-              <select class='form-control' id='selectAge'>
+              <select class='form-control' id='selectAge' name='age'>
                 <option value='child'>Child (0-11)</option>
                 <option value='adult'>Adult (12-64)</option>
                 <option value='senior'>Senior (65 and up)</option>
@@ -41,7 +39,7 @@
             </div>
             <div class='form-group'>
               <label for='selectTime'>Movie Time:</label>
-              <select class='form-control' id='selectTime'>
+              <select class='form-control' id='selectTime' name='time'>
                 <option value='matinee'>12:00pm</option>
                 <option value='matinee'>03:10pm</option>
                 <option value='prime'>06:30pm</option>
@@ -52,10 +50,15 @@
           </form>
         </div>
       </div>
-      <div id= 'show-price'>
-        <h2>Movie Price</h2>
-    
+      <h2>Movie Price</h2>
+      <div id='show-price'>
+        <!-- Stuff goes here -->
       </div>
     </div>
+    <script src='js/jquery-3.2.1.js'></script>
+    <script src='js/utils.js'></script>
+    <script src='js/ticket.js'></script>
+    <script src='js/movie.js'></script>
+    <script src='js/scripts.js'></script>
   </body>
 </html>
